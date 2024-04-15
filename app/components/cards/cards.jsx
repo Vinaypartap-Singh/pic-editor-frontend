@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
- 
+import Image from "next/image";
 import * as htmlToImage from 'html-to-image';
 import { saveAs } from 'file-saver';
 
@@ -40,10 +40,10 @@ const Cards = (props) => {
     <>
       <div className="card w-96 bg-base-100 shadow-xl content-center	flex" ref={nodeRef}>
 
-      <figure><img src={props.image} alt="Shoes" width="100%" /></figure>
+      <figure><Image src={props.image} width="100%" alt="poster image" /></figure>
       <div className="card-body">
       <div className=" h-28 w-28 rounded-full">
-        <img id="UserUploadImageID" src={props.userImg} className="rounded-full userImageMain" />
+        <Image id="UserUploadImageID" src={props.userImg} className="rounded-full userImageMain" alt="poster image main" />
       </div>
       <h2 className="card-title">{props.newname}</h2>
           <p>{props.newdesig}</p>

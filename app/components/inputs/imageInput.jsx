@@ -11,30 +11,36 @@ const ImageInput = (props) => {
 
 
 
-let flagVar="";
 
 
-  function fileReader(e) {
-    if(window.FileReader) {
-      var file  = e.target.files[0];
-      var reader = new FileReader();
-      if (file && file.type.match('image.*')) {
-        reader.readAsDataURL(file);
-      } else {
-        console.log('please add an image')
-      }
-      reader.onloadend = function (e) {
+  
+  
 
-        flagVar=reader.result;
-        console.log(flagVar);
-        props.setUserImg(flagVar);
+  useEffect((props) => {
+
+    let flagVar="";
+
+    function fileReader(e) {
+      if(window.FileReader) {
+        var file  = e.target.files[0];
+        var reader = new FileReader();
+        if (file && file.type.match('image.*')) {
+          reader.readAsDataURL(file);
+        } else {
+          console.log('please add an image')
+        }
+        reader.onloadend = function (e) {
+  
+          flagVar=reader.result;
+          console.log(flagVar);
+          props.setUserImg(flagVar);
+        }
       }
     }
-  }
-  
-  
 
-  useEffect(() => {
+
+
+
     document.getElementById('imageUpload').addEventListener('change', fileReader, false);
 
   }, []);
