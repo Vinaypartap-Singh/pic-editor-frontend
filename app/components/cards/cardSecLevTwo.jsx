@@ -9,7 +9,7 @@ import { useState } from 'react';
 import Inputs from '../inputs/inputs.jsx'
 import Cards from './cards.jsx';
 
-const cardSecLevTwo = (props) => {
+const CardSecLevTwo = (props) => {
 
     const [name, setName] = useState("Your Name Here");
     const [desig, setDesig] = useState("Sub Heading");    
@@ -54,4 +54,4 @@ const cardSecLevTwo = (props) => {
   )
 }
 
-export default cardSecLevTwo
+export default CardSecLevTwo

@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import * as htmlToImage from 'html-to-image';
 import { saveAs } from 'file-saver';
 
-const cards = (props) => {
+const Cards = (props) => {
 
 
   const nodeRef = useRef(null);
@@ -59,4 +59,4 @@ const cards = (props) => {
   )
 }
 
-export default cards
+export default Cards

@@ -17,7 +17,8 @@ const aboutUs = () => {
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-2xl">
       <h1 className="mb-5 text-5xl text-slate-200 font-bold">Branding at ease!</h1>
-      <p className="mb-5 text-slate-200">"Welcome to Shabdankur App – your go-to destination for creating captivating social media posts effortlessly. Embrace the spirit of festivals like Holi, Diwali, New Year, and more with our free web app. Simply add your name and choose an image, and watch as Shabdankur crafts stunning mockups tailored for your celebrations. Start spreading joy and festivity with personalized posts today!"
+      <p className="mb-5 text-slate-200">
+        Welcome to Shabdankur App – your go-to destination for creating captivating social media posts effortlessly. Embrace the spirit of festivals like Holi, Diwali, New Year, and more with our free web app. Simply add your name and choose an image, and watch as Shabdankur crafts stunning mockups tailored for your celebrations. Start spreading joy and festivity with personalized posts today!
 
 
 

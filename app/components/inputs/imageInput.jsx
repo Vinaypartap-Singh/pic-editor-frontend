@@ -1,17 +1,10 @@
+"use client"
 
-import React, {useEffect} from "react";
-import { useState } from "react";
-
- import { SimpleImage } from 'simple-image';
-
- import dynamic from 'next/dynamic'
-
- import {$,jQuery} from 'jquery';
-
+import React from "react";
 
  
 
-const imageInput = (props) => {
+const ImageInput = (props) => {
 
 
 
@@ -98,4 +91,4 @@ reader.readAsDataURL(this.files[0]);
 
 
 
-export default imageInput
+export default ImageInput
